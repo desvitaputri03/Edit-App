@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/etJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Judul Buku"
+            android:layout_margin="16dp" />
+
+        <EditText
+            android:id="@+id/etPengarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pengarang"
+            android:layout_margin="16dp"
+            android:layout_below="@id/etJudul" />
+
+        <EditText
+            android:id="@+id/etGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Isi"
+            android:layout_margin="16dp"
+            android:layout_below="@id/etPengarang" />
+
+        <Button
+            android:id="@+id/btnEditBuku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Buku"
+            android:layout_margin="16dp"
+            android:layout_below="@id/etGenre" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

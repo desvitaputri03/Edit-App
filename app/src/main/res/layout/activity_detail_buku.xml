@@ -1,0 +1,44 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".detail.DetailBukuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtDetailJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul Buku"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/txtDetailPengarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pengarang"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@id/txtDetailJudul" />
+
+        <TextView
+            android:id="@+id/txtDetailGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Isi"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/txtDetailPengarang" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

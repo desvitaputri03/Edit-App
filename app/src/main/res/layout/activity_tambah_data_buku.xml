@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <EditText
+            android:id="@+id/txtInputJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Judul Buku"
+            android:layout_margin="16dp" />
+
+        <EditText
+            android:id="@+id/txtInputPengarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pengarang"
+            android:layout_margin="16dp"
+            android:layout_below="@id/txtInputJudul" />
+
+        <EditText
+            android:id="@+id/txtInputGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Isi"
+            android:layout_margin="16dp"
+            android:layout_below="@id/txtInputPengarang" />
+
+        <Button
+            android:id="@+id/btnTambahData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Data"
+            android:layout_margin="16dp"
+            android:layout_below="@id/txtInputGenre" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
